@@ -1,6 +1,5 @@
 {
   "name": "netbull/econt",
-  "description": "This component provides integration with ECONT Courier",
   "type": "component",
   "authors": [{
     "name": "Alexandar Dimitrov",
