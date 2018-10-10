@@ -38,7 +38,7 @@ class CityQuartersRequest extends BaseRequest
     {
         $quarters = [];
 
-        foreach ($response->{CityQuarter::PARENT_TAG}->e as $quarter) {
+        foreach ($response->cities_quarters->e as $quarter) {
             $quarterObj = new CityQuarter();
             $this->mapData($quarterObj, $quarter);
 

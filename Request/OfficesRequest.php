@@ -36,7 +36,7 @@ class OfficesRequest extends BaseRequest
     {
         $offices = [];
 
-        foreach ($response->{Office::PARENT_TAG}->e as $office) {
+        foreach ($response->offices->e as $office) {
             $officeObj = new Office();
             $this->mapData($officeObj, $office);
 

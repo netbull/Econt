@@ -40,25 +40,25 @@ class ClientRequest extends BaseRequest
     {
         $clients = [];
 
-        foreach ($response->{Client::PARENT_TAG}->client as $client) {
-            $company = new Client();
-            $this->mapData($company, $client);
+        foreach ($response->clients->client as $cl) {
+            $client = new Client();
+            $this->mapData($client, $cl);
 
-            foreach ($client->{CDAgreement::PARENT_TAG}->children() as $agr) {
+            foreach ($cl->cd_agreements->children() as $agr) {
                 $agreement = new CDAgreement();
                 $this->mapData($agreement, $agr);
 
-                $company->addCdAgreement($agreement);
+                $client->addCdAgreement($agreement);
             }
 
-            foreach ($client->{Instruction::PARENT_TAG}->children() as $ins) {
+            foreach ($cl->instructions->children() as $ins) {
                 $instruction = new Instruction();
                 $this->mapData($instruction, $ins);
 
-                $company->addInstruction($instruction);
+                $client->addInstruction($instruction);
             }
 
-            $clients[] = $company;
+            $clients[] = $client;
         }
 
         return $clients;

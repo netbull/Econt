@@ -33,7 +33,7 @@ class CityZonesRequest extends BaseRequest
     {
         $zones = [];
 
-        foreach ($response->{CityZone::PARENT_TAG}->e as $zone) {
+        foreach ($response->cities_zones->e as $zone) {
             $zoneObj = new CityZone();
             $this->mapData($zoneObj, $zone);
 

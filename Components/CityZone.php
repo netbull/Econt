@@ -151,16 +151,19 @@ class CityZone extends Component
 
     /**
      * @param string $updatedTime
+     * @return CityZone
      */
-    public function setUpdatedTime(string $updatedTime): void
+    public function setUpdatedTime(string $updatedTime): CityZone
     {
         if ('0000-00-00 00:00:00' === $updatedTime) {
-            return;
+            return $this;
         }
 
         if ($updatedTime) {
             $updatedTime = \DateTime::createFromFormat('Y-m-d H:m:i', $updatedTime);
         }
         $this->updatedTime = $updatedTime;
+
+        return $this;
     }
 }

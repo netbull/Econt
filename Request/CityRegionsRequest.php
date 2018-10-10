@@ -38,7 +38,7 @@ class CityRegionsRequest extends BaseRequest
     {
         $regions = [];
 
-        foreach ($response->{CityRegion::PARENT_TAG}->e as $region) {
+        foreach ($response->cities_regions->e as $region) {
             $regionObj = new CityRegion();
             $this->mapData($regionObj, $region);
 

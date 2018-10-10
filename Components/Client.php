@@ -249,6 +249,17 @@ class Client extends Component
     }
 
     /**
+     * @param CDAgreement $agreement
+     * @return Client
+     */
+    public function addCdAgreement(CDAgreement $agreement): Client
+    {
+        $this->cdAgreements[] = $agreement;
+
+        return $this;
+    }
+
+    /**
      * @return Instruction[]
      */
     public function getInstructions(): array
@@ -263,6 +274,17 @@ class Client extends Component
     public function setInstructions(array $instructions): Client
     {
         $this->instructions = $instructions;
+
+        return $this;
+    }
+
+    /**
+     * @param Instruction $instruction
+     * @return Client
+     */
+    public function addInstruction(Instruction $instruction): Client
+    {
+        $this->instructions[] = $instruction;
 
         return $this;
     }

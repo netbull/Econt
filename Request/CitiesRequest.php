@@ -38,7 +38,7 @@ class CitiesRequest extends BaseRequest
     {
         $cities = [];
 
-        foreach ($response->{City::PARENT_TAG}->e as $city) {
+        foreach ($response->cities->e as $city) {
             $cityObj = new City();
             $this->mapData($cityObj, $city);
 
