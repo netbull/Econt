@@ -14,17 +14,17 @@ class CityRegion extends Component
     private $id;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $name;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $code;
 
     /**
-     * @var integer
+     * @var integer|null
      */
     private $idCity;
 
@@ -61,18 +61,18 @@ class CityRegion extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
 
     /**
-     * @param string $name
+     * @param null|string $name
      * @return CityRegion
      */
-    public function setName(string $name): CityRegion
+    public function setName(?string $name): CityRegion
     {
         $this->name = $name;
 
@@ -80,18 +80,18 @@ class CityRegion extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getCode(): string
+    public function getCode(): ?string
     {
         return $this->code;
     }
 
     /**
-     * @param string $code
+     * @param null|string $code
      * @return CityRegion
      */
-    public function setCode(string $code): CityRegion
+    public function setCode(?string $code): CityRegion
     {
         $this->code = $code;
 
@@ -99,18 +99,18 @@ class CityRegion extends Component
     }
 
     /**
-     * @return int
+     * @return int|null
      */
-    public function getIdCity(): int
+    public function getIdCity(): ?int
     {
         return $this->idCity;
     }
 
     /**
-     * @param int $idCity
+     * @param int|null $idCity
      * @return CityRegion
      */
-    public function setIdCity(int $idCity): CityRegion
+    public function setIdCity(?int $idCity): CityRegion
     {
         $this->idCity = $idCity;
 

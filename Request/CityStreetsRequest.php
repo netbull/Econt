@@ -38,7 +38,7 @@ class CityStreetsRequest extends BaseRequest
     {
         $streets = [];
 
-        foreach ($response->cities_streets->e as $street) {
+        foreach ($response->cities_street->e as $street) {
             $streetObj = new CityStreet();
             $this->mapData($streetObj, $street);
 

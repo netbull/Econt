@@ -14,17 +14,17 @@ class CityStreet extends Component
     private $id;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $name;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $nameEn;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $cityPostCode;
 
@@ -66,18 +66,18 @@ class CityStreet extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getName(): string
+    public function getName(): ?string
     {
         return $this->name;
     }
 
     /**
-     * @param string $name
+     * @param null|string $name
      * @return CityStreet
      */
-    public function setName(string $name): CityStreet
+    public function setName(?string $name): CityStreet
     {
         $this->name = $name;
 
@@ -85,18 +85,18 @@ class CityStreet extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getNameEn(): string
+    public function getNameEn(): ?string
     {
         return $this->nameEn;
     }
 
     /**
-     * @param string $nameEn
+     * @param null|string $nameEn
      * @return CityStreet
      */
-    public function setNameEn(string $nameEn): CityStreet
+    public function setNameEn(?string $nameEn): CityStreet
     {
         $this->nameEn = $nameEn;
 
@@ -104,18 +104,18 @@ class CityStreet extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getCityPostCode(): string
+    public function getCityPostCode(): ?string
     {
         return $this->cityPostCode;
     }
 
     /**
-     * @param string $cityPostCode
+     * @param null|string $cityPostCode
      * @return CityStreet
      */
-    public function setCityPostCode(string $cityPostCode): CityStreet
+    public function setCityPostCode(?string $cityPostCode): CityStreet
     {
         $this->cityPostCode = $cityPostCode;
 

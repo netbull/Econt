@@ -35,7 +35,7 @@ class City extends Component
     private $countryCode;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $type;
 
@@ -55,12 +55,12 @@ class City extends Component
     private $nameEn;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $region;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $regionEn;
 
@@ -203,18 +203,18 @@ class City extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getType(): string
+    public function getType(): ?string
     {
         return $this->type;
     }
 
     /**
-     * @param string $type
+     * @param null|string $type
      * @return City
      */
-    public function setType(string $type): City
+    public function setType(?string $type): City
     {
         $this->type = $type;
 
@@ -279,18 +279,18 @@ class City extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getRegion(): string
+    public function getRegion(): ?string
     {
         return $this->region;
     }
 
     /**
-     * @param string $region
+     * @param null|string $region
      * @return City
      */
-    public function setRegion(string $region): City
+    public function setRegion(?string $region): City
     {
         $this->region = $region;
 
@@ -298,18 +298,18 @@ class City extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getRegionEn(): string
+    public function getRegionEn(): ?string
     {
         return $this->regionEn;
     }
 
     /**
-     * @param string $regionEn
+     * @param null|string $regionEn
      * @return City
      */
-    public function setRegionEn(string $regionEn): City
+    public function setRegionEn(?string $regionEn): City
     {
         $this->regionEn = $regionEn;
 
