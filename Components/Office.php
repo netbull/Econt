@@ -29,14 +29,14 @@ class Office extends Component
     private $officeCode;
 
     /**
-     * @var string|null
+     * @var boolean
      */
-    private $isMobile;
+    private $isMobile = false;
 
     /**
-     * @var string|null
+     * @var boolean
      */
-    private $isMachine;
+    private $isMachine = false;
 
     /**
      * @var string
@@ -233,18 +233,18 @@ class Office extends Component
     }
 
     /**
-     * @return null|string
+     * @return bool
      */
-    public function getisMobile(): ?string
+    public function isMobile(): bool
     {
         return $this->isMobile;
     }
 
     /**
-     * @param null|string $isMobile
+     * @param bool $isMobile
      * @return Office
      */
-    public function setIsMobile(?string $isMobile): Office
+    public function setIsMobile(bool $isMobile): Office
     {
         $this->isMobile = $isMobile;
 
@@ -252,18 +252,18 @@ class Office extends Component
     }
 
     /**
-     * @return null|string
+     * @return bool
      */
-    public function getisMachine(): ?string
+    public function isMachine(): bool
     {
         return $this->isMachine;
     }
 
     /**
-     * @param null|string $isMachine
+     * @param bool $isMachine
      * @return Office
      */
-    public function setIsMachine(?string $isMachine): Office
+    public function setIsMachine(bool $isMachine): Office
     {
         $this->isMachine = $isMachine;
 
