@@ -20,11 +20,6 @@ abstract class BaseRequest implements RequestInterface
     const REQUEST_TYPE_OFFICES = 'offices';
     const REQUEST_TYPE_PARCEL = 'parcel';
 
-//    const SHIPMENTS = 'shipments';
-//    const SHIPPING = 'shipping';
-//    const CANCELLATION = 'cancel_shipments';
-//    const DELIVERY = 'delivery_days';
-
     /**
      * @return string
      */

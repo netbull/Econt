@@ -13,16 +13,12 @@ use NetBull\Econt\Components\Instruction;
 class ClientRequest extends BaseRequest
 {
     /**
-     * @var
-     */
-    private $addresses;
-
-    /**
      * @inheritdoc
      */
     public function getRequestType(): string
     {
-        return self::REQUEST_TYPE_CLIENTS;
+//        return self::REQUEST_TYPE_CLIENTS;
+        return 'profile';
     }
 
     /**
