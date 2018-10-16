@@ -9,12 +9,12 @@ namespace NetBull\Econt\Components;
 class Address extends Component
 {
     /**
-     * @var string
+     * @var string|null
      */
     private $cityPostCode;
 
     /**
-     * @var string
+     * @var string|null
      */
     private $city;
 
@@ -39,18 +39,18 @@ class Address extends Component
     private $other;
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getCityPostCode(): string
+    public function getCityPostCode(): ?string
     {
         return $this->cityPostCode;
     }
 
     /**
-     * @param string $cityPostCode
+     * @param null|string $cityPostCode
      * @return Address
      */
-    public function setCityPostCode(string $cityPostCode): Address
+    public function setCityPostCode(?string $cityPostCode): Address
     {
         $this->cityPostCode = $cityPostCode;
 
@@ -58,18 +58,18 @@ class Address extends Component
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getCity(): string
+    public function getCity(): ?string
     {
         return $this->city;
     }
 
     /**
-     * @param string $city
+     * @param null|string $city
      * @return Address
      */
-    public function setCity(string $city): Address
+    public function setCity(?string $city): Address
     {
         $this->city = $city;
 
