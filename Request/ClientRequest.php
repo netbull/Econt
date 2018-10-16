@@ -17,8 +17,7 @@ class ClientRequest extends BaseRequest
      */
     public function getRequestType(): string
     {
-//        return self::REQUEST_TYPE_CLIENTS;
-        return 'profile';
+        return self::REQUEST_TYPE_CLIENTS;
     }
 
     /**
